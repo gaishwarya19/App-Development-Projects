@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+   <title>My Favorite Movies</title>
+   <link rel="stylesheet" href="MobileStyleSheet.css" media="only screen and (max-width: 767px)" />
+   <link rel="stylesheet" href="TabStyleSheet.css" media="only screen and (min-width: 768px) and (max-width: 991px)" />
+   <link rel="stylesheet" href="desktopStylesheet.css" media="only screen and (min-width: 992px)" />
+   <link rel="stylesheet" href="PrintStyleSheet.css" media="only print" />
+   </head>
+   <body>
+      <div class="row">
+         <div class="column left" style="background-color:#f4f5f7;">
+            <p>
+               <a href="/myIndex.html">My Index</a>
+               <a href="/bumblebeePage.html">BumbleBee</a><br />
+               <a href="/TakenPage.html">Taken</a>
+            </p>
+         </div>
+         <div class="column middle" style="background-color:white;">
+            <p>I have designed 2 HTML pages of my favorite movies, which are BumbleBee and Taken.The pages are designed to look like their wikipedia pages.</p>
+            <p>Menu on the left lets you navigate between the index page, Taken movie and Bumblebee pages</p>
+            <p>Each hyperlink in a section takes you to precisely that section in wikipedia page. </p>
+            <img src="Resources/Images/movies.jpg" alt="movies" height="300" width="500" />
+            <h4>
+               <p>Enter your name and click the Show Team button to see our team of movie buffs</p>
+            </h4>
+            <form action="TeamData.xml">
+               <div><label for="name" title="name"></label></div>
+               <div>
+                  <input type="text" id="name" title="name"/>
+               </div>
+               <p></p>
+               <div>
+                  <input type="submit" value="Show the Team" />
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>

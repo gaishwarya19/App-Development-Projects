@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="mylibStyle.xslt" type="text/xsl"?>
+<userdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="mylibvalidation.xsd">
+  <users>
+    <firstname>Aishwarya</firstname>
+    <lastname>Godavari</lastname>
+    <bearcatid>M12948544</bearcatid>
+    <favoriteshortcut>Ctrl+C</favoriteshortcut>
+  </users>
+  <users>
+    <firstname>Shreya</firstname>
+    <lastname>Dumbre</lastname>
+    <bearcatid>M12934324</bearcatid>
+    <favoriteshortcut>Ctrl+Z</favoriteshortcut>
+  </users>
+  <users>
+    <firstname>Pavan</firstname>
+    <lastname>Polavarapu</lastname>
+    <bearcatid>M12934740</bearcatid>
+    <favoriteshortcut>Ctrl+V</favoriteshortcut>
+  </users>
+  <users>
+    <firstname>Nelsonkumar</firstname>
+    <lastname>Baskar</lastname>
+    <bearcatid>M23123123</bearcatid>
+    <favoriteshortcut>Alt+Tab</favoriteshortcut>
+  </users>
+</userdetails>

@@ -1,0 +1,7 @@
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\bin\WcfServiceAurora.dll.config
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\bin\WcfServiceAurora.dll
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\bin\WcfServiceAurora.pdb
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\obj\Debug\WcfServiceAurora.csprojAssemblyReference.cache
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\obj\Debug\WcfServiceAurora.csproj.CoreCompileInputs.cache
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\obj\Debug\WcfServiceAurora.dll
+D:\flex2\XML\newWCF\WcfServiceAurora\WcfServiceAurora\obj\Debug\WcfServiceAurora.pdb

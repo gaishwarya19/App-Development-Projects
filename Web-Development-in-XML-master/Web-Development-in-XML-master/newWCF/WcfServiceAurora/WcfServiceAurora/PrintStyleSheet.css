@@ -1,0 +1,69 @@
+﻿.img {
+    display:none;
+}
+
+.row: {
+    font-family: sans-serif;
+    font-size: 12px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.solidity {
+    border-style: solid;
+    border-color: grey;
+    background-color: #e6e6e6;
+    width: 200px;
+}
+
+.column {
+    font-family: sans-serif;
+    font-size: 12px;
+    float: left;
+    height: 750px;
+}
+
+.left {
+    float: left;
+    width: 10%;
+    padding-top: 100px;
+    padding-left: 10px;
+    height: 750px;
+}
+
+.right {
+    float: right;
+    text-align: left;
+    padding-top: 100px;
+    width: 20%;
+}
+
+.middle {
+    width: 70%;
+    float: left;
+    padding-left: 12px;
+    height: 300px;
+}
+
+table.mybox {
+    border: 1px;
+    border-style: solid;
+}
+
+    table.mybox th {
+        padding-right: 5px;
+        padding-left: 10px;
+        border: 1px;
+        border-style: solid;
+    }
+
+    table.mybox td {
+        padding-right: 5px;
+        padding-left: 10px;
+        border: 1px;
+        border-style: solid;
+    }
+
+table.normal, table.normal th, table.normal td {
+}
