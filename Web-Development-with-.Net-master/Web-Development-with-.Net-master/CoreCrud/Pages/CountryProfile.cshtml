@@ -1,0 +1,38 @@
+﻿@page
+@model CountryProfileModel
+@{
+ViewData["title"] = "Country List";
+}
+<h1>Country Profile</h1>
+<p>The following page will load countries and their details</p>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Athlete Details for the country below   </h3>
+    <thead>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>    
+        <tr>
+             <th>Country Name</th>
+            <th>Athlete Name</th>
+            <th> Game Start Time</th>
+            <th>Athlete win</th>
+               
+        </tr>
+        </thead>
+        <tbody>
+         @foreach(var Country in Model.CountryProfiles.Athletes) 
+         {
+         <tr>
+             <td>@Country.Country.Country_name</td>
+            <td>@Country.athlete_name</td>
+            <td>@Country.game_start_time</td>
+            <td>@Country.win</td>   
+           </tr> 
+            }
+            </tbody>
+    </table>
+   </div>
+   </div>

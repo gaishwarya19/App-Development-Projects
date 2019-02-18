@@ -1,0 +1,87 @@
+@page
+@model CoreCrud.Pages.Athletes.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Athlete</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Athlete.Id" />
+            <div class="form-group">
+                <label asp-for="Athlete.athlete_name" class="control-label"></label>
+                <input asp-for="Athlete.athlete_name" class="form-control" />
+                <span asp-validation-for="Athlete.athlete_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.game_start_time" class="control-label"></label>
+                <input asp-for="Athlete.game_start_time" class="form-control" />
+                <span asp-validation-for="Athlete.game_start_time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.game_end_time" class="control-label"></label>
+                <input asp-for="Athlete.game_end_time" class="form-control" />
+                <span asp-validation-for="Athlete.game_end_time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Athlete.win" /> @Html.DisplayNameFor(model => model.Athlete.win)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.Address" class="control-label"></label>
+                <input asp-for="Athlete.Address" class="form-control" />
+                <span asp-validation-for="Athlete.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.State" class="control-label"></label>
+                <input asp-for="Athlete.State" class="form-control" />
+                <span asp-validation-for="Athlete.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.City" class="control-label"></label>
+                <input asp-for="Athlete.City" class="form-control" />
+                <span asp-validation-for="Athlete.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.EmailAddress" class="control-label"></label>
+                <input asp-for="Athlete.EmailAddress" class="form-control" />
+                <span asp-validation-for="Athlete.EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.Zip" class="control-label"></label>
+                <input asp-for="Athlete.Zip" class="form-control" />
+                <span asp-validation-for="Athlete.Zip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.Score" class="control-label"></label>
+                <input asp-for="Athlete.Score" class="form-control" />
+                <span asp-validation-for="Athlete.Score" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Athlete.CountryId" class="control-label"></label>
+                <select asp-for="Athlete.CountryId" class="form-control" asp-items="ViewBag.CountryId"></select>
+                <span asp-validation-for="Athlete.CountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

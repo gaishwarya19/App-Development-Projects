@@ -1,0 +1,45 @@
+﻿@page
+@model RosterModel
+@{
+}
+<h1>Athletes</h1>
+<p>The following page will load Athletes with their countries</p>
+
+<div class="col-md-6">
+    <table class="AthleteTable" width="200%" border="1px" >
+    <thead>
+        <tr>
+            <th>Athlete name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Game Start Time</th> 
+            <th>Status</th>
+            <th>Country Name</th>         
+        </tr>
+        </thead>
+        <tbody>
+         @foreach(var Athlete in Model.Athletes) {
+         <tr>
+            <td>@Athlete.athlete_name</td>
+            <td>@Athlete.Address</td>
+            <td>@Athlete.City</td>
+            <td>@Athlete.State</td>
+            <td>@Athlete.Zip</td>
+            <td>@Athlete.game_start_time</td>
+           <td>@if(Athlete.win)
+                {
+                    <p>Won</p>
+                }
+                else
+                {
+                    <p>Lost</p>
+                }
+            
+            </td>
+            <td>@Athlete.Country.Country_name</td>
+           </tr> 
+            }
+            </tbody>
+   </div>

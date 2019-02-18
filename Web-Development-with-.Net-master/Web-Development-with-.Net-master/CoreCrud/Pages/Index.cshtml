@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<h1>Welcome Athletes</h1>
+
+<h5>This web application is created for the tennis sport. It lets us add various countries and also its players</h5>
+<h4><strong>List of pages</strong></h4>
+<dl>
+    <dt><a href="Athletes/Index">Athletes</a></dt>
+    <dd>These are the players from various countries who have a game scheduled.</dd>
+    <dt><a href="Countries/Index">Countries</a></dt>
+    <dd>These are the countries that the players belong from.</dd>
+    <dt><a href="/Roster">Roster</a></dt>
+    <dd>This is Athlete list from various countries</dd>
+    <dt><a href="/CountryProfile">Country Profile</a></dt>
+    <dd>The following page will load countries and their details</dd>
+
+    
+</dl>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table" frame="box">
+            <thead>
+                <tr>
+                    <td>Number of Athletes</td>
+                    <td class="text-right">@Model.CountOfAthletes</td>
+                </tr>  
+                <tr>
+                    <td>Matches Won</td>
+                    <td class="text-right">@Model.CountOfWins</td>
+                </tr>  
+                <tr>
+                    <td>Matches lost</td>
+                    <td class="text-right">@Model.CountOfLosses</td>
+                </tr> 
+                <tr>
+                    <td>Number of Countries</td>
+                    <td class="text-right">@Model.CountOfCountries</td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+</div>
